@@ -1,15 +1,31 @@
-import random  
-# Define me":"Player","he,"max_health": 100, "attack": 10, "defense": 5, "level": 1, "exp": 0, "exp_to_level_up": 100, "gold": 0, "weapon": "Dagger", "armor": "Leather"}  
-# Define enemy stats enemies = {"Goblin": {"health": 50, "attack": 8, "defense": 2, "exp": 20, "gold": 10},            
-"Skeleton":{"health": 70, "attack": 12, "defense": 4, "exp": 30, "gold": 15},            
-"Zombie":{"health": 100, "attack": 15, "defense": 8, "exp": 50, "gold": 20}}  
-# Define weapons and armor weapons = {"Dagger": {"name": "Dagger", "attack": 10, "cost": 0},            
-"Sword": {"name": "Sword", "attack": 20, "cost": 50},            
-"Axe": {"name": "Axe", "attack": 30, "cost": 100}} armor = {"Leather": {"name": "Leather", "defense": 5, "cost": 0},          
-"Chainmail": {"name": "Chainmail", "defense": 10, "cost": 50},          
-"Plate": {"name": "Plate", "defense": 20, "cost": 100}}  
-# Define cities cities = {"Town": {"name": "Town", "description": "A small town with a few shops and houses.", "shop": {"Sword": 50, "Axe": 100, "Chainmail": 50, "Plate": 100}},           
-"City": {"name": "City", "description": "A bustling city with many shops and people.", "shop": {"Sword": 100, "Axe": 200, "Chainmail": 100, "Plate": 200}}}  
-# Define quests quests = [{"name": "Goblin Problem", "description": "The town is being terrorized by goblins. Defeat their leader and save the town.", "enemies": [{"name": "Goblin", "count": 5}, {"name": "Goblin Leader", "count": 1}], "reward": {"exp": 100, "gold": 50, "item": "Axe"}},           
-{"name": "Skeleton Invasion", "description": "The city is under attack by skeletons. Clear out the graveyard and defeat the necromancer.", "enemies": [{"name": "Skeleton", "count": 10}, {"name": "Necromancer", "count": 1}], "reward": {"exp": 200, "gold": 100, "item": "Plate"}}]  
-# Define skills and perks skills = {"Strength": {"name": "Strength", "description": "Increase attack power by 10%", "level_req": 5},           "Defense": {"name": "Defense", "description": "Increase defense by 10%", "level_req": 5}}  perks = {"Strength   
+import random
+
+# Define player stats
+player = {"name": "Player", "health": 100, "max_health": 100, "attack": 10, "defense": 5, "level": 1, "exp": 0, "exp_to_level_up": 100, "gold": 0, "weapon": "Dagger", "armor": "Leather"}
+
+# Define enemy stats
+enemies = {"Goblin": {"health": 50, "attack": 8, "defense": 2, "exp": 20, "gold": 10},
+           "Skeleton": {"health": 70, "attack": 12, "defense": 4, "exp": 30, "gold": 15},
+           "Zombie": {"health": 100, "attack": 15, "defense": 8, "exp": 50, "gold": 20}}
+
+# Define weapons and armor
+weapons = {"Dagger": {"name": "Dagger", "attack": 10, "cost": 0},
+           "Sword": {"name": "Sword", "attack": 20, "cost": 50},
+           "Axe": {"name": "Axe", "attack": 30, "cost": 100}}
+armor = {"Leather": {"name": "Leather", "defense": 5, "cost": 0},
+         "Chainmail": {"name": "Chainmail", "defense": 10, "cost": 50},
+         "Plate": {"name": "Plate", "defense": 20, "cost": 100}}
+
+# Define cities
+cities = {"Town": {"name": "Town", "description": "A small town with a few shops and houses.", "shop": {"Sword": 50, "Axe": 100, "Chainmail": 50, "Plate": 100}},
+          "City": {"name": "City", "description": "A bustling city with many shops and people.", "shop": {"Sword": 100, "Axe": 200, "Chainmail": 100, "Plate": 200}}}
+
+# Define quests
+quests = [{"name": "Goblin Problem", "description": "The town is being terrorized by goblins. Defeat their leader and save the town.", "enemies": [{"name": "Goblin", "count": 5}, {"name": "Goblin Leader", "count": 1}], "reward": {"exp": 100, "gold": 50, "item": "Axe"}},
+          {"name": "Skeleton Invasion", "description": "The city is under attack by skeletons. Clear out the graveyard and defeat the necromancer.", "enemies": [{"name": "Skeleton", "count": 10}, {"name": "Necromancer", "count": 1}], "reward": {"exp": 200, "gold": 100, "item": "Plate"}}]
+
+# Define skills and perks
+skills = {"Strength": {"name": "Strength", "description": "Increase attack power by 10%", "level_req": 5},
+          "Defense": {"name": "Defense", "description": "Increase defense by 10%", "level_req": 5}}
+
+perks = {"Strength
